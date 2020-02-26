@@ -23,10 +23,19 @@ body {
 
 .welcome__section, .footer {
   background-size: cover;
-  max-height: 100vmax;
+  height: 100vmax;
   background-repeat: no-repeat; 
   background-position: 50% 50%;
   }
+
+/* .welcome__section::after, .footer__section::after {
+  content: "";
+  background-color: #080B31;
+  position: relative;
+  opacity: 0.9;
+
+  min-height: 570px;
+} */
 
 .welcome__section::after, .footer__section::after {
   content: "";
@@ -330,11 +339,6 @@ body {
 }
 }
 
-
-
-
-
-
 @media(min-width: 641px) and (max-width: 960px) {
 
   /* Welcome Section */
@@ -480,10 +484,11 @@ border-radius: 10px;
 
 }
 
-@media(min-width: 961px) and (max-width: 1920px) {
+@media(min-width: 961px) {
   .welcome__section, .footer {
     background-image: url("../img/football_1280.jpg");
-    min-height: 570px;
+    height: 100vh;
+    background-position: cover;
     }
 
   .footer {
@@ -492,6 +497,14 @@ border-radius: 10px;
 
     .welcome__lable {
       text-align: center;
+    }
+
+    .label__one {
+      margin-left: 10vw;
+    }
+
+    .label__two {
+      margin-left: 50vw;
     }
 
     .buttons {
@@ -515,8 +528,6 @@ border-radius: 10px;
       margin-left: 3vw;
     }
 
-
-
     .button__content {
       margin: 1vmin auto .5vmin 13vmin;
     }
@@ -524,7 +535,7 @@ border-radius: 10px;
     /* Athlets */
 
     .section__img__athlets {
-      margin: 10vmin auto 5vmin 20vmin;
+      margin: 10vmin auto 5vmin 10vmin;
     }
 
     .section {
@@ -534,7 +545,7 @@ border-radius: 10px;
 
 
     .content__athlets > *, .section__heading {
-      padding: 3vmin 3vmin 6vmin 80vmin;
+      padding: 3vmin 3vmin 6vmin 100vmin;
     }
 
 
@@ -578,21 +589,22 @@ border-radius: 10px;
     
 /* Players */
 .section__img__players {
-  margin: 4vmin 0 5vmin 60vmin;
+  margin: 4vmin 0 5vmin 90vmin;
 }
 
 .section__heading__players {
-  padding-left: 5vmin;
+  padding-left: 10vmin;
 }
 
 .content__players > * {
-  padding: 2vmin 60vmax 4vmin 5vmin;
+  padding: 2vmin 60vmax 4vmin 10vmin;
 }
 
 /* Last Section */
 
 .container__last__section__img {
-  width: 50vmin;
+  width: 50vw;
+
 }
 
 .container__last__wrap {
@@ -615,8 +627,13 @@ border-radius: 10px;
 }
 
 .container__last__title, .container__last__info {
-  padding-left: 20vmin;
+  padding-left: 15vmin;
   margin-left: 0;
+}
+
+.container__last__info {
+  font-size: 3vmin;
+  line-height: 4vmin;
 }
 
 .container__number__purple > .container__number {
@@ -657,21 +674,8 @@ border-radius: 10px;
   margin: 20vh auto 20vh 10vmin;
 }
 
-
-
-
-
 }
 
 
-/* @media (min-width: 1921px) {
-  .welcome__section, .footer {
-    background-image: url("../img/football_1920.jpg");
-    min-height: 570px;
-    }
 
-  .footer {
-    background-image: url("../img/game_1920.jpg");
-    }
-} */
 
