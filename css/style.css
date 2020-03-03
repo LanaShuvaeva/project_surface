@@ -28,15 +28,6 @@ body {
   background-position: 50% 50%;
   }
 
-/* .welcome__section::after, .footer__section::after {
-  content: "";
-  background-color: #080B31;
-  position: relative;
-  opacity: 0.9;
-
-  min-height: 570px;
-} */
-
 .welcome__section::after, .footer__section::after {
   content: "";
   background-color: #080B31;
@@ -219,7 +210,6 @@ body {
 
   .container__last__section__img {
     max-width: 100%;
-    max-height: 80vh;
     position: relative;
   }
 
@@ -231,7 +221,6 @@ body {
     z-index: 1;
     margin-top: 100%;
     margin-left: 3vmin;
- 
   }
 
 .container__number__purple > .container__number:after {
@@ -322,7 +311,7 @@ body {
   }
   .apple__icon, .google__icon {
     width: 10vmin;
-    margin-left: 22vw;
+    margin-left: 4rem;
   }
 
   .button__content {
@@ -330,8 +319,7 @@ body {
 }
 
 .section__img__athlets {
-  margin: 0 auto 5vmin auto;
-  left: 20%;
+  left: 30%;
 }
 
 .container__light__grey {
