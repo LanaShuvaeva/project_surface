@@ -412,7 +412,8 @@ body {
     }
     .container__number:after,
     .container__purple > .container__number:after,
-    .container__blue > .container__number:after {
+    .container__blue > .container__number:after,
+    .container__number__purple > .container__number:after {
       width: 3vmin;
       height: .7vmin;
     }
@@ -459,15 +460,24 @@ body {
 }
 
 @media(min-width: 961px) {
-  .welcome__section, .footer {
+
+  .welcome__section {
     background-image: url("../img/football_1280.jpg");
-    height: 100vh;
-    background-position: cover;
-    }
+  }
 
   .footer {
     background-image: url("../img/game_1280.jpg");
     }
+
+
+  .welcome__section, .footer {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vmin;
+    background-position: center;
+    position: relative;
+    }
+
 
     .welcome__lable {
       text-align: center;
@@ -641,15 +651,10 @@ body {
   padding: 3vmin;
   width: 10vmin;
   border-radius: 20%;
-  margin: 23vh 0 0 40vh;
+  margin: 23vh 0 0 50vh;
 }
 
 .footer__text {
   margin: 20vh auto 20vh 10vmin;
 }
-
-}
-
-
-
 
