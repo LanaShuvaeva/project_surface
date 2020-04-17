@@ -208,7 +208,11 @@ body {
 
   /* Section - Last container */
 
-  .container__last__section__img {
+  .container__last {
+    position: relative;
+  }
+
+   .container__last__section__img {
     max-width: 100%;
     position: relative;
   }
@@ -220,10 +224,9 @@ body {
     height: 5em;
     position: absolute;
     z-index: 1;
-    margin-left: 3vmin;
+    left: 3vmin;
     display: flex;
-    position: absolute;
-    margin-top: 32em;
+    bottom: -1em;
   }
 
   .container__number__purple > .container__number {
