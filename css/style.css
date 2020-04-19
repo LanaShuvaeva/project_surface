@@ -21,11 +21,14 @@ body {
 
 /* Welcome Section */
 
-.welcome__section, .footer {
+.welcome, .footer {
   background-size: cover;
-  height: 100vmax;
   background-repeat: no-repeat; 
   background-position: 50% 50%;
+  min-height: 480px;
+  position: relative;
+  z-index: 2;
+  color: #fff;
   }
 
 .welcome__section::after, .footer__section::after {
@@ -37,17 +40,10 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  max-height: 100vmax;
-  min-height: 570px;
+  min-height: 480px;
 }
 
-.welcome__container, .footer {
-  position: relative;
-  z-index: 2;
-  color: #fff;
-}
-
-.footer__container {
+.footer__container, .welcome__container {
   position: relative;
   z-index: 1;
 }
@@ -100,6 +96,9 @@ body {
   position: absolute;
 }
 
+.buttons {
+  padding-bottom: 5em;
+}
 /* Sections: Athletes & Players */
 
 .container {
@@ -279,9 +278,10 @@ body {
 .logo__footer {
   color: #fff;
   width: 40vmin;
-  margin-top: 18vmin;
-  max-width: 200px;
-}
+  margin-top: 12vmin;
+  padding-bottom: 1em;
+  }
+
 
 .footer__heading {
   line-height: 1rem;
@@ -299,12 +299,9 @@ body {
   margin: 20vh auto;
 }
 
-
-
 @media (max-width: 640px) {
-  .welcome__section, .footer {
+  .welcome__section {
     background-image: url("../img/football_767.jpg");
-    min-height: 570px;
     }
 
   .footer {
@@ -342,7 +339,6 @@ body {
 
   .welcome__section, .footer {
     background-image: url("../img/football_767.jpg");
-    min-height: 570px;
     }
 
   .footer {
@@ -495,6 +491,7 @@ body {
       display: flex;
       align-items: center;
     }
+
 
     .button {
       padding: 2vmin;
