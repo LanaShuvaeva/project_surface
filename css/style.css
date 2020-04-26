@@ -650,16 +650,51 @@ bottom: 3.5vmin;
 }
 
 .container__last__title {
-font-size: 10vmin;
-line-height: 15vmin;
+font-size: 3rem;
+line-height: 3rem;
 color: #e7e7e7;
-margin: 15vmin 3vmin 0 3vmin;
+margin: 8rem 3rem 3rem 0.9375rem;
 }
 
 .container__last__info {
 font-size: 1rem;
 line-height: 1.25rem;
-margin: 2.187rem 0.9375rem 5rem 0.9375rem;
+margin: 2.187rem 3rem 5rem 0.9375rem;
+padding-right: 3rem;
 }
 
 
+
+/* Footer */
+
+.logo__footer {
+  width: 30vmin;
+  }
+
+
+.footer__heading {
+  line-height: 1rem;
+  font-size: 10vmin;
+}
+
+.footer__sub-heading {
+  font-weight: 100;
+  font-size: 4vmin;
+  line-height: 1rem;
+  color: #ffffff99;
+}
+
+.footer__text {
+  margin: 20vh auto;
+}
+
+.logo__footer__svg {
+  width: 10vmin;
+}
+
+/* .footer__wrap {
+  display: inline-block;
+
+} */
+
+}
