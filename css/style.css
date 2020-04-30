@@ -457,6 +457,9 @@ body {
 
   .welcome__section {
     background-image: url("../img/football_1280.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: 50% 50%;
   }
 
   .footer {
@@ -578,14 +581,21 @@ body {
 
 /* Section - Last container */
 
-.container__last__section__img {
-  width: 50vw;
+.section {
+  display: block;
 }
+
+
+.container__last__section__img {
+  width: 49.50vw;
+}
+
 
 .container__last__wrap {
   display: flex;
   flex-wrap: wrap;
 }
+
 
 .container__last__wrap__reversed {
   display: flex;
@@ -593,23 +603,20 @@ body {
   flex-direction: row-reverse;
 }
 
-.container__last__title {
-  font-size: 7vmin;
+.container__last__section__img, .container__last__content {
+  flex-basis: 49.5%;
 }
 
-.container__last__section__img, .container__last__content {
-  flex-basis: 50%;
-}
 
 .container__last__title, .container__last__info {
-  padding-left: 15vmin;
+  padding-left: 15%;
   margin-left: 0;
 }
 
-.container__last__info {
+/* .container__last__info {
   font-size: 3vmin;
   line-height: 4vmin;
-}
+} */
 
 
 
@@ -621,8 +628,8 @@ body {
   display: flex;
   top: 30%;
 
-  padding: 3vmin; 
-  margin-left: 43vw; 
+  padding: 2vmin; 
+  left: 90%; 
 }
 
 .container__number__purple__reversed {
@@ -631,8 +638,8 @@ body {
   display: flex;
   top: 30%;
 
-  padding: 3vmin; 
-  margin-left: -10vmin;
+  padding: 2vmin; 
+  left: -10%;
 }
 
 .container__number__purple > .container__number {
@@ -653,17 +660,13 @@ bottom: 3.5vmin;
 font-size: 3rem;
 line-height: 3rem;
 color: #e7e7e7;
-margin: 8rem 3rem 3rem 0.9375rem;
 }
 
 .container__last__info {
 font-size: 1rem;
 line-height: 1.25rem;
-margin: 2.187rem 3rem 5rem 0.9375rem;
 padding-right: 3rem;
 }
-
-
 
 /* Footer */
 
@@ -690,11 +693,4 @@ padding-right: 3rem;
 
 .logo__footer__svg {
   width: 10vmin;
-}
-
-/* .footer__wrap {
-  display: inline-block;
-
-} */
-
 }
